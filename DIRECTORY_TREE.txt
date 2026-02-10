@@ -1,0 +1,172 @@
+Model/
+│
+├── 📋 Documentation
+│   ├── README.md                      Main documentation and overview
+│   ├── USAGE_GUIDE.md                 Step-by-step usage instructions
+│   ├── TROUBLESHOOTING.md             Common issues and solutions
+│   ├── PROJECT_SUMMARY.md             Complete project summary
+│   └── QUICK_REFERENCE.md             Quick command reference
+│
+├── 🔧 Configuration & Setup
+│   ├── requirements.txt               Python dependencies
+│   ├── config.py                      Configuration template
+│   ├── verify_setup.py                Environment verification script
+│   ├── quick_start.bat                Windows quick start script
+│   └── .gitignore                     Git ignore rules
+│
+├── 🎯 Main Execution
+│   └── main.py                        Unified CLI interface for train/predict
+│
+├── 📦 Source Code (src/)
+│   ├── preprocessing.py               Data preprocessing module
+│   │   ├── DataPreprocessor class
+│   │   ├── Semicolon list parsing
+│   │   ├── Sentence embeddings
+│   │   ├── Multi-hot encoding
+│   │   ├── Categorical encoding
+│   │   └── Numerical normalization
+│   │
+│   ├── feature_engineering.py         Logic feature engineering
+│   │   ├── FeatureEngineer class
+│   │   ├── Constraint violations
+│   │   ├── Objective-interest overlap
+│   │   ├── Seniority gap
+│   │   ├── Role complementarity
+│   │   ├── Age compatibility
+│   │   ├── Company size ratio
+│   │   ├── Location matching
+│   │   └── Industry matching
+│   │
+│   ├── dataset_builder.py             Dataset construction
+│   │   ├── DatasetBuilder class
+│   │   ├── Pair generation
+│   │   ├── Profile merging
+│   │   ├── Train/val splitting
+│   │   └── Submission formatting
+│   │
+│   ├── model.py                       Neural network architecture
+│   │   ├── CompatibilityModel class
+│   │   ├── Siamese encoder
+│   │   ├── Interaction layers
+│   │   │   ├── Concatenation
+│   │   │   ├── Difference
+│   │   │   ├── Product
+│   │   │   └── Cosine similarity
+│   │   ├── Deep layers
+│   │   ├── Callbacks
+│   │   └── Simplified model builder
+│   │
+│   ├── train.py                       Training pipeline
+│   │   ├── Trainer class
+│   │   ├── Data preparation
+│   │   ├── Preprocessing orchestration
+│   │   ├── Feature engineering
+│   │   ├── Model training
+│   │   ├── Evaluation
+│   │   └── Visualization
+│   │
+│   └── predict.py                     Prediction pipeline
+│       ├── Predictor class
+│       ├── Resource loading
+│       ├── Test data processing
+│       ├── Prediction generation
+│       └── Submission creation
+│
+├── 📁 Data Directory (data/)
+│   ├── .gitkeep
+│   │
+│   └── [Place your files here]
+│       ├── train.xlsx                 Training user profiles
+│       ├── target.csv                 Training pairs with scores
+│       ├── test.xlsx                  Test user profiles
+│       └── test_pairs.csv             Test pairs (if provided)
+│
+├── 🤖 Models Directory (models/)
+│   ├── .gitkeep
+│   │
+│   └── [Generated during training]
+│       ├── best_model.h5              Trained neural network
+│       ├── preprocessor.pkl           Fitted preprocessor
+│       ├── evaluation_results.json   Validation metrics
+│       └── training_history.png      Training curves
+│
+└── 📤 Output Directory (output/)
+    ├── .gitkeep
+    │
+    └── [Generated during prediction]
+        ├── submission.csv             Final competition submission
+        └── submission_debug.csv       Detailed predictions
+
+
+════════════════════════════════════════════════════════════════════════════════
+
+📊 FILE STATISTICS
+
+Source Code:
+  - preprocessing.py          ~330 lines
+  - feature_engineering.py    ~240 lines
+  - dataset_builder.py        ~210 lines
+  - model.py                  ~290 lines
+  - train.py                  ~250 lines
+  - predict.py                ~200 lines
+  - main.py                   ~180 lines
+  ────────────────────────────────────────
+  Total:                      ~1,700 lines
+
+Documentation:
+  - README.md                 ~320 lines
+  - USAGE_GUIDE.md            ~450 lines
+  - TROUBLESHOOTING.md        ~480 lines
+  - PROJECT_SUMMARY.md        ~390 lines
+  - QUICK_REFERENCE.md        ~170 lines
+  ────────────────────────────────────────
+  Total:                      ~1,810 lines
+
+Supporting:
+  - config.py                 ~240 lines
+  - verify_setup.py           ~180 lines
+  - requirements.txt           ~10 lines
+  - quick_start.bat            ~80 lines
+  - .gitignore                 ~70 lines
+  ────────────────────────────────────────
+  Total:                       ~580 lines
+
+════════════════════════════════════════════════════════════════════════════════
+
+🎯 KEY FEATURES
+
+✅ Complete data preprocessing pipeline
+✅ Advanced feature engineering with domain logic
+✅ Siamese neural network with interaction layers
+✅ End-to-end training automation
+✅ Prediction and submission generation
+✅ Comprehensive error handling
+✅ Extensive documentation
+✅ Setup verification tools
+✅ Windows quick start script
+✅ Troubleshooting guide
+
+════════════════════════════════════════════════════════════════════════════════
+
+🚀 QUICK START
+
+1. Verify:    python verify_setup.py
+2. Install:   pip install -r requirements.txt
+3. Train:     python main.py --mode train --train-profiles data/train.xlsx --target data/target.csv
+4. Predict:   python main.py --mode predict --test-profiles data/test.xlsx --test-pairs data/test_pairs.csv
+5. Submit:    Upload output/submission.csv
+
+════════════════════════════════════════════════════════════════════════════════
+
+📚 DOCUMENTATION STRUCTURE
+
+README.md              → Start here (overview, architecture, quick start)
+USAGE_GUIDE.md         → Detailed step-by-step instructions
+TROUBLESHOOTING.md     → Solutions to common problems
+PROJECT_SUMMARY.md     → Complete project reference
+QUICK_REFERENCE.md     → Command cheat sheet
+config.py              → Advanced configuration options
+
+════════════════════════════════════════════════════════════════════════════════
+
+Ready for the Enigma Hackathon! 🏆
